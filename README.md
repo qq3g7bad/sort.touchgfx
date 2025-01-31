@@ -1,17 +1,33 @@
 # 🔃 sort.touchgfx
 
-Sort screens and containers in TouchGFX Designer file.
+## 🌱 Overview
+
+Sort.TouchGFX is a PowerShell script designed to sort screens and containers inside a `*.touchgfx` file used by TouchGFX Designer.
+This script processes the `*.touchgfx` file as JSON and sorts the screens and containers in alphabetical order.
 
 ## 🚀 Usage
 
-* Provide a *.touchgfx file as an argument.
-  * Then the screens and containers in the *.touchgfx file are sorted.
-  * The file is overwritten.
-* The *.touchgfx file is written as JSON and runs only on Windows. Therefore this script is written by PowerShell and uses JSON objects.
-  * Once sorted the *.touchgfx file will have an unformatted style, but when run in TouchGFX Designer the file will be formatted.
+### 1. Clone the Repository
+
+First, clone the repository to your local environment:
+
+```bash
+git clone https://github.com/qq3g7bad/sort.touchgfx.git
+```
+
+### 2. Run the PowerShell Script
+
+Next, execute the PowerShell script, providing the path to your `*.touchgfx` file as an argument:
 
 ```powershell
 .\sorttgfx.ps1 ..\MyApplication.touchgfx
 ```
+
+### Notes:
+
+- This script is designed to run on Windows.
+- The `*.touchgfx` file is stored in JSON format, and the script modifies this JSON structure.
+- The script will overwrite the original `*.touchgfx` file.
+- After sorting, the formatting of the `*.touchgfx` file may appear disrupted. However, opening it in TouchGFX Designer will automatically restore proper formatting.
 
 
